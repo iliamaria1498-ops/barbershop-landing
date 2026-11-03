@@ -1,0 +1,403 @@
+/* ============================================
+   BarberShop - style.css
+   Google Fonts + Variables CSS
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+	--color-general: #383838;
+	--color-titulos: #222;
+	--fondo-negro: #262728;
+	--fondo-rosado: #fee9da;
+	--color-gris: #c6c6c6;
+	--color-blanco: #ffffff;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Didact Gothic', sans-serif;
+	color: var(--color-general);
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', sans-serif;
+	color: var(--color-titulos);
+}
+
+header{
+	background-color: var(--fondo-negro);
+}
+
+.enlace-flecha{
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--color-titulos);
+	text-decoration: none;
+	border-bottom: 2px solid var(--color-titulos);
+	padding-bottom: 4px;
+}
+.enlace-flecha:hover{
+	color: var(--color-titulos);
+	opacity: 0.75;
+}
+.enlace-flecha-claro{
+	color: var(--color-blanco);
+	border-bottom-color: var(--color-blanco);
+}
+.enlace-flecha-claro:hover{
+	color: var(--color-blanco);
+}
+
+#hero{
+	background-color: var(--fondo-negro);
+}
+.hero-texto-col{
+	display: flex;
+	align-items: center;
+	background-color: var(--fondo-negro);
+}
+.hero-texto-contenido{
+	padding: 60px;
+}
+.titulo-hero{
+	color: var(--color-blanco);
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.texto-hero{
+	color: var(--color-gris);
+	font-size: 15px;
+	line-height: 1.8;
+	margin-bottom: 25px;
+	max-width: 420px;
+}
+.hero-img-col{
+	position: relative;
+	min-height: 480px;
+	background-image: url('../img/1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.btn-book-appointment{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background-color: var(--color-blanco);
+	color: var(--color-titulos);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	padding: 14px 22px;
+}
+.btn-book-appointment:hover{
+	background-color: var(--fondo-rosado);
+	color: var(--color-titulos);
+}
+
+#trendy{
+	background-color: var(--color-blanco);
+	padding: 90px 0;
+}
+.trendy-texto-col{
+	padding: 40px 60px;
+}
+.titulo-trendy{
+	font-size: 34px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.texto-trendy{
+	font-size: 15px;
+	line-height: 1.8;
+	color: var(--color-general);
+	margin-bottom: 25px;
+}
+.trendy-imagen{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#services{
+	background-color: var(--color-blanco);
+	padding: 90px 0;
+}
+.titulo-services{
+	font-size: 34px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.texto-services{
+	color: var(--color-general);
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+.servicio-item{
+	padding: 0;
+}
+.servicio-wrapper{
+	position: relative;
+	overflow: hidden;
+}
+.servicio-img{
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	display: block;
+}
+.servicio-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.35);
+	transition: background 0.3s ease;
+}
+.servicio-wrapper:hover .servicio-overlay{
+	background: rgba(0,0,0,0.55);
+}
+.servicio-nombre{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: var(--color-blanco);
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+
+#products{
+	background-color: var(--fondo-rosado);
+}
+.products-img-col{
+	padding: 0;
+}
+.products-imagen{
+	width: 100%;
+	display: block;
+}
+.products-texto-col{
+	padding: 60px;
+}
+.titulo-products{
+	font-size: 34px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.texto-products-parrafo{
+	font-size: 15px;
+	line-height: 1.8;
+	color: var(--color-general);
+	margin-bottom: 25px;
+	max-width: 420px;
+}
+
+
+#testimonials{
+	background-color: var(--color-blanco);
+}
+.testimonio-texto{
+	background-color: var(--color-gris);
+	min-height: 320px;
+}
+.testimonio-contenido{
+	padding: 50px 60px;
+}
+.icono-comilla{
+	font-size: 26px;
+	color: var(--color-titulos);
+	margin-bottom: 15px;
+	display: block;
+}
+.testimonio-cita{
+	font-size: 17px;
+	font-style: italic;
+	line-height: 1.7;
+	color: var(--color-titulos);
+	margin-bottom: 20px;
+}
+.testimonio-nombre{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+	font-size: 14px;
+}
+.testimonio-rol{
+	font-size: 13px;
+	color: var(--color-general);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.testimonio-imagen{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	min-height: 320px;
+}
+
+#contact{
+	padding: 90px 0;
+	background-color: var(--color-blanco);
+}
+.titulo-contact{
+	font-size: 34px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.texto-contact{
+	font-size: 15px;
+	line-height: 1.8;
+	color: var(--color-general);
+	margin-bottom: 30px;
+	max-width: 480px;
+}
+.input-contacto{
+	border: none;
+	border-bottom: 1px solid var(--color-gris);
+	border-radius: 0;
+	padding: 12px 5px;
+	margin-bottom: 20px;
+	font-family: 'Didact Gothic', sans-serif;
+}
+.input-contacto:focus{
+	box-shadow: none;
+	border-bottom: 1px solid var(--color-titulos);
+}
+.textarea-contacto{
+	resize: none;
+}
+.btn-submit{
+	background-color: var(--fondo-negro);
+	color: var(--color-blanco);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	padding: 14px 32px;
+}
+.btn-submit:hover{
+	background-color: var(--color-titulos);
+}
+.contact-info-col{
+	padding-top: 10px;
+}
+.contact-info-item{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+.contact-info-icono{
+	font-size: 18px;
+	color: var(--color-titulos);
+	margin-right: 18px;
+	margin-top: 3px;
+}
+.contact-info-label{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+.contact-info-valor{
+	font-size: 14px;
+	color: var(--color-general);
+	margin-bottom: 0;
+}
+
+#footer{
+	background-color: var(--fondo-negro);
+	padding: 30px 0;
+}
+.redes-footer{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.redes-footer li a{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 38px;
+	height: 38px;
+	margin: 0 5px;
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 50%;
+	color: var(--color-blanco);
+	text-decoration: none;
+	font-size: 14px;
+}
+.redes-footer li a:hover{
+	background-color: var(--color-blanco);
+	color: var(--fondo-negro);
+}
+
+@media (max-width: 991.98px){
+	.titulo-hero{
+		font-size: 36px;
+	}
+	.hero-texto-contenido{
+		padding: 40px;
+	}
+	.hero-img-col{
+		min-height: 320px;
+	}
+	.trendy-texto-col,
+	.products-texto-col{
+		padding: 40px;
+	}
+	.testimonio-contenido{
+		padding: 40px;
+	}
+}
+
+@media (max-width: 767.98px){
+	.titulo-hero{
+		font-size: 30px;
+	}
+	.hero-texto-contenido{
+		padding: 30px;
+		text-align: center;
+	}
+	.texto-hero{
+		max-width: 100%;
+	}
+	.btn-book-appointment{
+		position: static;
+		display: inline-block;
+		margin: 15px;
+	}
+	.trendy-texto-col,
+	.products-texto-col{
+		padding: 30px;
+		text-align: center;
+	}
+	.servicio-img{
+		height: 220px;
+	}
+	.testimonio-imagen{
+		min-height: 220px;
+	}
+	.testimonio-texto{
+		min-height: auto;
+	}
+}
